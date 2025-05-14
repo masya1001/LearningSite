@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основы HTML - Обучение</title>
+    <body>
+    <header>
+        <h1>Основы HTML</h1>
+        <p>Изучите базовые теги и принципы создания веб-страниц</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#intro">Введение</a></li>
+            <li><a href="#structure">Структура</a></li>
+            <li><a href="#text">Текст</a></li>
+            <li><a href="#links">Ссылки</a></li>
+            <li><a href="#images">Изображения</a></li>
+            <li><a href="#lists">Списки</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <article id="intro">
+            <h2>Введение в HTML</h2>
+            <p>HTML (HyperText Markup Language) - это стандартный язык разметки для создания веб-страниц. Он определяет структуру и содержание веб-страницы.</p>
+            
+            <div class="example">
+                <h3>Простой пример HTML</h3>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Моя страница&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Привет, мир!&lt;/h1&gt;
+    &lt;p&gt;Это моя первая веб-страница.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+            
+            <p>HTML состоит из тегов, которые обозначаются угловыми скобками <code>&lt; &gt;</code>. Большинство тегов имеют открывающий и закрывающий тег (например, <code>&lt;p&gt;</code> и <code>&lt;/p&gt;</code>).</p>
+        </article>
+        
+        <article id="structure">
+            <h2>Структура HTML-документа</h2>
+            <p>Каждый HTML-документ имеет стандартную структуру:</p>
+            
+            <ul>
+                <li><code>&lt;!DOCTYPE html&gt;</code> - объявление типа документа</li>
+                <li><code>&lt;html&gt;</code> - корневой элемент страницы</li>
+                <li><code>&lt;head&gt;</code> - содержит метаинформацию о странице</li>
+                <li><code>&lt;body&gt;</code> - содержит видимое содержимое страницы</li>
+            </ul>
+            
+            <h3>Основные элементы внутри &lt;head&gt;</h3>
+            <pre><code>&lt;meta charset="UTF-8"&gt; - кодировка символов
+&lt;title&gt;Заголовок страницы&lt;/title&gt; - заголовок во вкладке браузера
+&lt;link rel="stylesheet" href="styles.css"&gt; - подключение CSS
+&lt;script src="script.js"&gt;&lt;/script&gt; - подключение JavaScript</code></pre>
+        </article>
+        
+        <article id="text">
+            <h2>Работа с текстом</h2>
+            <p>HTML предоставляет множество тегов для форматирования текста:</p>
+            
+            <div class="example">
+                <h3>Примеры текстовых тегов</h3>
+                <pre><code>&lt;h1&gt;Заголовок 1 уровня&lt;/h1&gt;
+&lt;h2&gt;Заголовок 2 уровня&lt;/h2&gt;
+...
+&lt;h6&gt;Заголовок 6 уровня&lt;/h6&gt;
+
+&lt;p&gt;Абзац текста&lt;/p&gt;
+
+&lt;strong&gt;Важный текст (жирный)&lt;/strong&gt;
+&lt;em&gt;Акцентированный текст (курсив)&lt;/em&gt;
+
+&lt;br&gt; - перенос строки
+&lt;hr&gt; - горизонтальная линия</code></pre>
+            </div>
+        </article>
+        
+        <aside>
+            <h2>Полезные ресурсы</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML" target="_blank">MDN Web Docs - HTML</a></li>
+                <li><a href="https://html.spec.whatwg.org/" target="_blank">Стандарт HTML</a></li>
+                <li><a href="https://validator.w3.org/" target="_blank">Валидатор HTML</a></li>
+            </ul>
+            
+            <h2>Практика</h2>
+            <p>Лучший способ изучить HTML - практиковаться. Создайте простую страницу и экспериментируйте с тегами.</p>
+            <a href="#" class="btn">Примеры заданий</a>
+            
+            <h2>Советы</h2>
+            <ul>
+                <li>Всегда закрывайте теги</li>
+                <li>Используйте отступы для читаемости кода</li>
+                <li>Проверяйте код на валидность</li>
+                <li>Комментируйте сложные участки</li>
+            </ul>
+        </aside>
+        
+        <article id="links">
+            <h2>Ссылки</h2>
+            <p>Тег <code>&lt;a&gt;</code> создает гиперссылки:</p>
+            
+            <pre><code>&lt;a href="https://example.com"&gt;Текст ссылки&lt;/a&gt;</code></pre>
+            
+            <h3>Атрибуты ссылок</h3>
+            <ul>
+                <li><code>href</code> - URL-адрес назначения</li>
+                <li><code>target</code> - где открыть ссылку (<code>_blank</code> - в новой вкладке)</li>
+                <li><code>title</code> - всплывающая подсказка</li>
+            </ul>
+            
+            <div class="example">
+                <h3>Примеры ссылок</h3>
+                <pre><code>&lt;a href="page.html"&gt;Внутренняя ссылка&lt;/a&gt;
+&lt;a href="https://site.com" target="_blank"&gt;Внешняя ссылка&lt;/a&gt;
+&lt;a href="#section"&gt;Якорная ссылка&lt;/a&gt;
+&lt;a href="mailto:email@example.com"&gt;Ссылка на email&lt;/a&gt;</code></pre>
+            </div>
+        </article>
+        
+        <article id="images">
+            <h2>Изображения</h2>
+            <p>Тег <code>&lt;img&gt;</code> вставляет изображение на страницу:</p>
+            
+            <pre><code>&lt;img src="image.jpg" alt="Описание изображения"&gt;</code></pre>
+            
+            <h3>Атрибуты изображений</h3>
+            <ul>
+                <li><code>src</code> - путь к файлу изображения</li>
+                <li><code>alt</code> - альтернативный текст (обязателен для доступности)</li>
+                <li><code>width</code>/<code>height</code> - размеры изображения</li>
+                <li><code>title</code> - всплывающая подсказка</li>
+            </ul>
+            
+            <div class="example">
+                <h3>Пример изображения</h3>
+                <pre><code>&lt;img src="logo.png" alt="Логотип сайта" width="200"&gt;</code></pre>
+            </div>
+        </article>
+        
+        <article id="lists">
+            <h2>Списки</h2>
+            <p>HTML поддерживает несколько типов списков:</p>
+            
+            <h3>Маркированный список</h3>
+            <pre><code>&lt;ul&gt;
+    &lt;li&gt;Пункт 1&lt;/li&gt;
+    &lt;li&gt;Пункт 2&lt;/li&gt;
+    &lt;li&gt;Пункт 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            
+            <h3>Нумерованный список</h3>
+            <pre><code>&lt;ol&gt;
+    &lt;li&gt;Первый пункт&lt;/li&gt;
+    &lt;li&gt;Второй пункт&lt;/li&gt;
+    &lt;li&gt;Третий пункт&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+            
+            <h3>Список определений</h3>
+            <pre><code>&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;Язык разметки&lt;/dd&gt;
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Язык стилей&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Основы HTML. Все права защищены.</p>
+        <p>Учебный проект для начинающих веб-разработчиков</p>
+    </footer>
+</body>
+</html>
